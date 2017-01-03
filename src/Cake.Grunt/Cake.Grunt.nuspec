@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Cake.Grunt</id>
+    <title>Cake.Grunt</title>
+    <authors>Phil Oyston</authors>
+    <owners>Phil Oyston</owners>
+    <licenseUrl>https://github.com/Tanzy/Cake.Grunt/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/Tanzy/Cake.Grunt</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/cake-build/graphics/master/png/cake-medium.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Adds Grunt helpers for Cake</summary>
+    <description>A set of aliases for Cake to help with running Grunt scripts as part of a build (taken from Cake.Gulp)</description>
+    <tags>Cake Script Build Grunt</tags>
+  </metadata>
+  <files>
+    <file src="..\..\artifacts\build\Cake.Grunt.xml" target="lib\net45" />
+    <file src="..\..\artifacts\build\Cake.Grunt.dll" target="lib\net45" />
+  </files>
+</package>

@@ -1,0 +1,237 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cake.Grunt</name>
+    </assembly>
+    <members>
+        <member name="T:Cake.Grunt.GruntRunnerAliases">
+            <summary>
+            contains functionality to interact with grunt
+            </summary>
+        </member>
+        <member name="M:Cake.Grunt.GruntRunnerAliases.Grunt(Cake.Core.ICakeContext)">
+            <summary>
+            Allows access to the grunt task orchestrator for either the local or global installation
+            </summary>
+            <param name="context">The cake context</param>
+            <returns></returns>
+            <example>
+            <para>Run 'grunt' from your local grunt installation</para>
+            <para>Cake task:</para>
+            <code>
+            <![CDATA[
+            Task("Grunt")
+                .Does(() =>
+            {
+                Grunt.Local.Execute();
+            });
+            ]]>
+            </code>
+            <para>Run 'grunt' from your global grunt installation</para>
+            <para>Cake task:</para>
+            <code>
+            <![CDATA[
+            Task("Grunt")
+                .Does(() =>
+            {
+                Grunt.Global.Execute();
+            });
+            ]]>
+            </code>
+            <para>Run 'grunt --gruntfile gruntbuild.js'</para>
+            <para>Cake task:</para>
+            <code>
+            <![CDATA[
+            Task("Grunt")
+                .Does(() =>
+            {
+                Grunt.Local.Execute(settings => settings.WithGruntFile("gruntbuild.js"));
+                
+                Grunt.Global.Execute(settings => settings.WithGruntFile("gruntbuild.js"));
+            });
+            ]]>
+            </code>
+            <para>Run 'grunt ci'</para>
+            <para>Cake task:</para>
+            <code>
+            <![CDATA[
+            Task("Grunt")
+                .Does(() =>
+            {
+                Grunt.Local.Execute(settings => settings.WithArguments("ci"));
+                Grunt.Global.Execute(settings => settings.WithArguments("ci"));
+            });
+            ]]>
+            </code>
+            <para>Run 'grunt ci --dist=./artifacts/dist'</para>
+            <para>Cake task:</para>
+            <code>
+            <![CDATA[
+            Task("Grunt")
+                .Does(() =>
+            {
+                Grunt.Local.Execute(settings => settings.WithArguments("ci --dist=./artifacts/dist"));
+            });
+            ]]>
+            </code>
+            </example>
+        </member>
+        <member name="T:Cake.Grunt.GruntGlobalRunner">
+            <summary>
+            Class GruntGlobalRunner.
+            </summary>
+        </member>
+        <member name="M:Cake.Grunt.GruntGlobalRunner.#ctor(Cake.Core.IO.IFileSystem,Cake.Core.ICakeEnvironment,Cake.Core.IO.IProcessRunner,Cake.Core.Tooling.IToolLocator)">
+            <summary>
+            creates a new grunt global runner
+            </summary>
+            <param name="fileSystem">the file system</param>
+            <param name="environment">The cake environment</param>
+            <param name="processRunner">The cake process runner</param>
+            <param name="tools">The tools locator</param>
+        </member>
+        <member name="M:Cake.Grunt.GruntGlobalRunner.Execute(System.Action{Cake.Grunt.GruntRunnerSettings})">
+            <summary>
+            Executes grunt from the global installation
+            </summary>
+        </member>
+        <member name="M:Cake.Grunt.GruntGlobalRunner.GetToolExecutableNames">
+            <summary>
+            Gets the possible names of the tool executable.
+            </summary>
+            <returns>
+            The tool executable name.
+            </returns>
+        </member>
+        <member name="T:Cake.Grunt.GruntLocalRunner">
+            <summary>
+            gulp local runner
+            </summary>
+        </member>
+        <member name="M:Cake.Grunt.GruntLocalRunner.#ctor(Cake.Core.IO.IFileSystem,Cake.Core.ICakeEnvironment,Cake.Core.IO.IProcessRunner,Cake.Core.Tooling.IToolLocator)">
+            <summary>
+            creates a new grunt local runner
+            </summary>
+            <param name="fileSystem">the file system</param>
+            <param name="environment">The cake environment</param>
+            <param name="processRunner">The cake process runner</param>
+            <param name="tools">The tools locator</param>
+        </member>
+        <member name="M:Cake.Grunt.GruntLocalRunner.Execute(System.Action{Cake.Grunt.GruntLocalRunnerSettings})">
+            <summary>
+            Executes grunt from the local installation
+            </summary>
+        </member>
+        <member name="M:Cake.Grunt.GruntLocalRunner.GetToolExecutableNames">
+            <summary>
+            Gets the possible names of the tool executable.
+            </summary>
+            <returns>
+            The tool executable name.
+            </returns>
+        </member>
+        <member name="T:Cake.Grunt.GruntLocalRunnerSettings">
+            <summary>
+            Class GruntLocalRunnerSettings.
+            </summary>
+            <seealso cref="T:Cake.Grunt.GruntRunnerSettings" />
+        </member>
+        <member name="P:Cake.Grunt.GruntLocalRunnerSettings.PathToGruntJs">
+            <summary>
+            Path to node modules
+            </summary>
+        </member>
+        <member name="M:Cake.Grunt.GruntLocalRunnerSettings.SetPathToGruntJs(Cake.Core.IO.FilePath)">
+            <summary>
+            Overrides the default path to grunt javascript, the current working directory will be prepended to this path
+            </summary>
+            <param name="gruntJs">path to grunt if different from './node_modules/grunt/lib/grunt.js'</param>
+            <returns></returns>
+            <exception cref="T:System.IO.FileNotFoundException"></exception>
+        </member>
+        <member name="T:Cake.Grunt.GruntRunner`1">
+            <summary>
+            Class GruntRunner.
+            </summary>
+        </member>
+        <member name="M:Cake.Grunt.GruntRunner`1.#ctor(Cake.Core.IO.IFileSystem,Cake.Core.ICakeEnvironment,Cake.Core.IO.IProcessRunner,Cake.Core.Tooling.IToolLocator)">
+            <summary>
+            creates a new grunt runner
+            </summary>
+            <param name="fileSystem">the file system</param>
+            <param name="environment">The cake environment</param>
+            <param name="processRunner">The cake process runner</param>
+            <param name="tools">The tools locator</param>
+        </member>
+        <member name="M:Cake.Grunt.GruntRunner`1.GetToolName">
+            <summary>
+            Gets the name of the tool.
+            </summary>
+            <returns>
+            The name of the tool.
+            </returns>
+        </member>
+        <member name="M:Cake.Grunt.GruntRunner`1.Execute(System.Action{`0})">
+            <summary>
+            Executes grunt
+            </summary>
+        </member>
+        <member name="M:Cake.Grunt.GruntRunner`1.ValidateSettings(`0)">
+            <summary>
+            Validates settings
+            </summary>
+            <param name="settings">the settings class</param>
+            <exception cref="T:System.IO.FileNotFoundException">when grunt file does not exist</exception>
+        </member>
+        <member name="T:Cake.Grunt.GruntRunnerFactory">
+            <summary>
+            Returns a gulp runner based on either a local or global gulp installation via npm
+            </summary>
+        </member>
+        <member name="P:Cake.Grunt.GruntRunnerFactory.Local">
+            <summary>
+            Get a gulp local runner based on a local gulp installation, a local installation is achieved through `npm install gulp`
+            </summary>
+        </member>
+        <member name="P:Cake.Grunt.GruntRunnerFactory.Global">
+            <summary>
+            Get a gulp global runner based on a global gulp installation, a global installation is achieved through `npm install gulp -g`
+            </summary>
+        </member>
+        <member name="T:Cake.Grunt.GruntRunnerSettings">
+            <summary>
+            Grunt settings
+            </summary>
+        </member>
+        <member name="P:Cake.Grunt.GruntRunnerSettings.GruntFile">
+            <summary>
+            The gruntfile to run
+            </summary>
+        </member>
+        <member name="P:Cake.Grunt.GruntRunnerSettings.Arguments">
+            <summary>
+            Argument string to pass to grunt
+            </summary>
+        </member>
+        <member name="M:Cake.Grunt.GruntRunnerSettings.WithGruntFile(Cake.Core.IO.FilePath)">
+            <summary>
+            The gruntfile to use
+            </summary>
+            <param name="gruntfile">path to gruntfile</param>
+            <returns>the settings</returns>
+        </member>
+        <member name="M:Cake.Grunt.GruntRunnerSettings.WithArguments(System.String)">
+            <summary>
+            The argument string to pass to grunt
+            </summary>
+            <param name="arguments">an argument string</param>
+            <returns>the settings</returns>
+        </member>
+        <member name="M:Cake.Grunt.GruntRunnerSettings.EvaluateCore(Cake.Core.IO.ProcessArgumentBuilder)">
+            <summary>
+            evaluate options
+            </summary>
+            <param name="args"></param>
+        </member>
+    </members>
+</doc>
