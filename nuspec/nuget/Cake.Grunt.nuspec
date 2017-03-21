@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <id>Cake.Grunt</id>
+    <version>0.0.0</version>
+    <authors>Ken Lea</authors>
+    <owners>Ken Lea, cake-contrib</owners>
+    <description>Cake Grunt Addin.</description>
+    <summary>A set of aliases for Cake to help with running Gulp scripts as part of a build.</summary>
+    <licenseUrl>https://github.com/cake-contrib/Cake.Grunt/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/cake-contrib/Cake.Grunt/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <copyright>Copyright (c) Cake Contributions 2017 - Present</copyright>
+    <tags>Cake, Script, Build, Grunt, Addin</tags>
+  </metadata>
+  <files>
+    <file src="Cake.Grunt.dll" target="lib\net45" />
+    <file src="Cake.Grunt.pdb" target="lib\net45" />
+    <file src="Cake.Grunt.xml" target="lib\net45" />
+  </files>
+</package>
