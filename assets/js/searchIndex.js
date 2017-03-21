@@ -34,16 +34,16 @@ var searchModule = function() {
 
     a({
         id:0,
-        title:"GruntLocalRunner",
-        content:"GruntLocalRunner",
+        title:"GruntRunnerSettings",
+        content:"GruntRunnerSettings",
         description:'',
         tags:''
     });
 
     a({
         id:1,
-        title:"GruntRunnerFactory",
-        content:"GruntRunnerFactory",
+        title:"GruntLocalRunner",
+        content:"GruntLocalRunner",
         description:'',
         tags:''
     });
@@ -58,24 +58,24 @@ var searchModule = function() {
 
     a({
         id:3,
-        title:"GruntRunnerSettings",
-        content:"GruntRunnerSettings",
+        title:"GruntLocalRunnerSettings",
+        content:"GruntLocalRunnerSettings",
         description:'',
         tags:''
     });
 
     a({
         id:4,
-        title:"GruntRunnerAliases",
-        content:"GruntRunnerAliases",
+        title:"GruntRunnerFactory",
+        content:"GruntRunnerFactory",
         description:'',
         tags:''
     });
 
     a({
         id:5,
-        title:"GruntLocalRunnerSettings",
-        content:"GruntLocalRunnerSettings",
+        title:"GruntRunnerAliases",
+        content:"GruntRunnerAliases",
         description:'',
         tags:''
     });
@@ -89,14 +89,14 @@ var searchModule = function() {
     });
 
     y({
-        url:'/Cake.Grunt/Cake.Grunt/api/Cake.Grunt/GruntLocalRunner',
-        title:"GruntLocalRunner",
+        url:'/Cake.Grunt/Cake.Grunt/api/Cake.Grunt/GruntRunnerSettings',
+        title:"GruntRunnerSettings",
         description:""
     });
 
     y({
-        url:'/Cake.Grunt/Cake.Grunt/api/Cake.Grunt/GruntRunnerFactory',
-        title:"GruntRunnerFactory",
+        url:'/Cake.Grunt/Cake.Grunt/api/Cake.Grunt/GruntLocalRunner',
+        title:"GruntLocalRunner",
         description:""
     });
 
@@ -107,20 +107,20 @@ var searchModule = function() {
     });
 
     y({
-        url:'/Cake.Grunt/Cake.Grunt/api/Cake.Grunt/GruntRunnerSettings',
-        title:"GruntRunnerSettings",
+        url:'/Cake.Grunt/Cake.Grunt/api/Cake.Grunt/GruntLocalRunnerSettings',
+        title:"GruntLocalRunnerSettings",
+        description:""
+    });
+
+    y({
+        url:'/Cake.Grunt/Cake.Grunt/api/Cake.Grunt/GruntRunnerFactory',
+        title:"GruntRunnerFactory",
         description:""
     });
 
     y({
         url:'/Cake.Grunt/Cake.Grunt/api/Cake.Grunt/GruntRunnerAliases',
         title:"GruntRunnerAliases",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Grunt/Cake.Grunt/api/Cake.Grunt/GruntLocalRunnerSettings',
-        title:"GruntLocalRunnerSettings",
         description:""
     });
 
