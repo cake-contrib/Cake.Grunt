@@ -50,8 +50,8 @@ var searchModule = function() {
 
     a({
         id:2,
-        title:"GruntRunnerFactory",
-        content:"GruntRunnerFactory",
+        title:"GruntRunnerAliases",
+        content:"GruntRunnerAliases",
         description:'',
         tags:''
     });
@@ -66,8 +66,8 @@ var searchModule = function() {
 
     a({
         id:4,
-        title:"GruntRunnerAliases",
-        content:"GruntRunnerAliases",
+        title:"GruntLocalRunner",
+        content:"GruntLocalRunner",
         description:'',
         tags:''
     });
@@ -82,8 +82,8 @@ var searchModule = function() {
 
     a({
         id:6,
-        title:"GruntLocalRunner",
-        content:"GruntLocalRunner",
+        title:"GruntRunnerFactory",
+        content:"GruntRunnerFactory",
         description:'',
         tags:''
     });
@@ -101,8 +101,8 @@ var searchModule = function() {
     });
 
     y({
-        url:'/Cake.Grunt/Cake.Grunt/api/Cake.Grunt/GruntRunnerFactory',
-        title:"GruntRunnerFactory",
+        url:'/Cake.Grunt/Cake.Grunt/api/Cake.Grunt/GruntRunnerAliases',
+        title:"GruntRunnerAliases",
         description:""
     });
 
@@ -113,8 +113,8 @@ var searchModule = function() {
     });
 
     y({
-        url:'/Cake.Grunt/Cake.Grunt/api/Cake.Grunt/GruntRunnerAliases',
-        title:"GruntRunnerAliases",
+        url:'/Cake.Grunt/Cake.Grunt/api/Cake.Grunt/GruntLocalRunner',
+        title:"GruntLocalRunner",
         description:""
     });
 
@@ -125,8 +125,8 @@ var searchModule = function() {
     });
 
     y({
-        url:'/Cake.Grunt/Cake.Grunt/api/Cake.Grunt/GruntLocalRunner',
-        title:"GruntLocalRunner",
+        url:'/Cake.Grunt/Cake.Grunt/api/Cake.Grunt/GruntRunnerFactory',
+        title:"GruntRunnerFactory",
         description:""
     });
 
