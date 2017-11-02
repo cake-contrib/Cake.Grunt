@@ -42,16 +42,16 @@ var searchModule = function() {
 
     a({
         id:1,
-        title:"GruntLocalRunnerSettings",
-        content:"GruntLocalRunnerSettings",
+        title:"GruntRunner",
+        content:"GruntRunner",
         description:'',
         tags:''
     });
 
     a({
         id:2,
-        title:"GruntRunnerAliases",
-        content:"GruntRunnerAliases",
+        title:"GruntLocalRunner",
+        content:"GruntLocalRunner",
         description:'',
         tags:''
     });
@@ -66,67 +66,67 @@ var searchModule = function() {
 
     a({
         id:4,
-        title:"GruntLocalRunner",
-        content:"GruntLocalRunner",
+        title:"GruntRunnerAliases",
+        content:"GruntRunnerAliases",
         description:'',
         tags:''
     });
 
     a({
         id:5,
-        title:"GruntRunner",
-        content:"GruntRunner",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:6,
         title:"GruntRunnerFactory",
         content:"GruntRunnerFactory",
         description:'',
         tags:''
     });
 
+    a({
+        id:6,
+        title:"GruntLocalRunnerSettings",
+        content:"GruntLocalRunnerSettings",
+        description:'',
+        tags:''
+    });
+
     y({
-        url:'/Cake.Grunt/Cake.Grunt/api/Cake.Grunt/GruntGlobalRunner',
+        url:'/Cake.Grunt/api/Cake.Grunt/GruntGlobalRunner',
         title:"GruntGlobalRunner",
         description:""
     });
 
     y({
-        url:'/Cake.Grunt/Cake.Grunt/api/Cake.Grunt/GruntLocalRunnerSettings',
-        title:"GruntLocalRunnerSettings",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Grunt/Cake.Grunt/api/Cake.Grunt/GruntRunnerAliases',
-        title:"GruntRunnerAliases",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Grunt/Cake.Grunt/api/Cake.Grunt/GruntRunnerSettings',
-        title:"GruntRunnerSettings",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Grunt/Cake.Grunt/api/Cake.Grunt/GruntLocalRunner',
-        title:"GruntLocalRunner",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Grunt/Cake.Grunt/api/Cake.Grunt/GruntRunner_1',
+        url:'/Cake.Grunt/api/Cake.Grunt/GruntRunner_1',
         title:"GruntRunner<TSettings>",
         description:""
     });
 
     y({
-        url:'/Cake.Grunt/Cake.Grunt/api/Cake.Grunt/GruntRunnerFactory',
+        url:'/Cake.Grunt/api/Cake.Grunt/GruntLocalRunner',
+        title:"GruntLocalRunner",
+        description:""
+    });
+
+    y({
+        url:'/Cake.Grunt/api/Cake.Grunt/GruntRunnerSettings',
+        title:"GruntRunnerSettings",
+        description:""
+    });
+
+    y({
+        url:'/Cake.Grunt/api/Cake.Grunt/GruntRunnerAliases',
+        title:"GruntRunnerAliases",
+        description:""
+    });
+
+    y({
+        url:'/Cake.Grunt/api/Cake.Grunt/GruntRunnerFactory',
         title:"GruntRunnerFactory",
+        description:""
+    });
+
+    y({
+        url:'/Cake.Grunt/api/Cake.Grunt/GruntLocalRunnerSettings',
+        title:"GruntLocalRunnerSettings",
         description:""
     });
 
