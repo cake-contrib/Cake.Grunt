@@ -9,13 +9,14 @@
     <summary>A set of aliases for Cake to help with running Gulp scripts as part of a build.</summary>
     <licenseUrl>https://github.com/cake-contrib/Cake.Grunt/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/cake-contrib/Cake.Grunt/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/cake-contrib/graphics/a5cf0f881c390650144b2243ae551d5b9f836196/png/cake-contrib-medium.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <copyright>Copyright (c) Cake Contributions 2017 - Present</copyright>
     <tags>Cake, Script, Build, Grunt, Addin</tags>
   </metadata>
   <files>
-    <file src="Cake.Grunt.dll" target="lib\net45" />
-    <file src="Cake.Grunt.pdb" target="lib\net45" />
-    <file src="Cake.Grunt.xml" target="lib\net45" />
+    <file src="Cake.Grunt.dll" target="lib\net461" />
+    <file src="Cake.Grunt.pdb" target="lib\net461" />
+    <file src="Cake.Grunt.xml" target="lib\net461" />
   </files>
 </package>
