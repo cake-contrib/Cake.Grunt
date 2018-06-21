@@ -4,6 +4,8 @@
 build_script:
   - ps: .\build.ps1 -Target AppVeyor
 
+image: Visual Studio 2017
+
 # Tests
 test: off
 

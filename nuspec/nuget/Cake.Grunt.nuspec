@@ -14,9 +14,5 @@
     <copyright>Copyright (c) Cake Contributions 2017 - Present</copyright>
     <tags>Cake, Script, Build, Grunt, Addin</tags>
   </metadata>
-  <files>
-    <file src="Cake.Grunt.dll" target="lib\net461" />
-    <file src="Cake.Grunt.pdb" target="lib\net461" />
-    <file src="Cake.Grunt.xml" target="lib\net461" />
-  </files>
+
 </package>
