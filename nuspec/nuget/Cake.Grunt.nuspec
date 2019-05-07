@@ -7,7 +7,8 @@
     <owners>Ken Lea, cake-contrib</owners>
     <description>Cake Grunt Addin.</description>
     <summary>A set of aliases for Cake to help with running Gulp scripts as part of a build.</summary>
-    <licenseUrl>https://github.com/cake-contrib/Cake.Grunt/blob/master/LICENSE</licenseUrl>
+    <license type="expression">MIT</license>
+    <repository type="git" url="https://github.com/cake-contrib/Cake.Grunt"/>
     <projectUrl>https://github.com/cake-contrib/Cake.Grunt/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/cake-contrib/graphics/png/cake-contrib-medium.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
