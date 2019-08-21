@@ -15,5 +15,9 @@
     <copyright>Copyright (c) Cake Contributions 2017 - Present</copyright>
     <tags>Cake, Script, Build, Grunt, Addin</tags>
   </metadata>
-
+  <files>
+    <file src="netstandard2.0/Cake.Grunt.dll" target="lib/netstandard2.0" />
+    <file src="netstandard2.0/Cake.Grunt.pdb" target="lib/netstandard2.0" />
+    <file src="netstandard2.0/Cake.Grunt.xml" target="lib/netstandard2.0" />
+  </files>
 </package>
