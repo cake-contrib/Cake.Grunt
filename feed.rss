@@ -4,9 +4,9 @@
 		<title>Cake.Grunt</title>
 		<link>http://cake-contrib.github.io/Cake.Grunt</link>
 		<description />
-		<copyright>2017</copyright>
-		<pubDate>Thu, 02 Nov 2017 20:40:57 GMT</pubDate>
-		<lastBuildDate>Thu, 02 Nov 2017 20:40:57 GMT</lastBuildDate>
+		<copyright>2021</copyright>
+		<pubDate>Thu, 14 Jan 2021 20:32:37 GMT</pubDate>
+		<lastBuildDate>Thu, 14 Jan 2021 20:32:37 GMT</lastBuildDate>
 		<item>
 			<title>New Release - 0.1.0</title>
 			<link>http://cake-contrib.github.io/Cake.Grunt/blog/new-release-0.1.0</link>
@@ -16,7 +16,7 @@
 			<pubDate>Tue, 21 Mar 2017 00:00:00 GMT</pubDate>
 			<content:encoded>&lt;h1 id="initial-release"&gt;Initial Release&lt;/h1&gt;
 &lt;p&gt;This is the initial release of the Cake.Grunt Addin for Cake.  This is essentially a port of the &lt;a href="https://github.com/cake-contrib/Cake.Gulp"&gt;Cake.Gulp&lt;/a&gt;.  Full credit to Ken Lea for doing this work!&lt;/p&gt;
-&lt;p&gt;Please do not hesitate to reach out in the &lt;a href="https://gitter.im/cake-contrib/Lobby"&gt;Gitter Channel&lt;/a&gt; if you have any issues using this addin.&lt;/p&gt;
+&lt;p&gt;Please do not hesitate to reach out in [GitHub Discussions][https://github.com/cake-build/cake/discussions/categories/extension-requests] if you have any issues using this addin.&lt;/p&gt;
 </content:encoded>
 		</item>
 	</channel>
