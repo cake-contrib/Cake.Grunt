@@ -9,4 +9,4 @@ Author: gep13
 
 This is the initial release of the Cake.Grunt Addin for Cake.  This is essentially a port of the [Cake.Gulp](https://github.com/cake-contrib/Cake.Gulp).  Full credit to Ken Lea for doing this work!
 
-Please do not hesitate to reach out in the [Gitter Channel](https://gitter.im/cake-contrib/Lobby) if you have any issues using this addin.
+Please do not hesitate to reach out in [GitHub Discussions][https://github.com/cake-build/cake/discussions/categories/extension-requests] if you have any issues using this addin.
