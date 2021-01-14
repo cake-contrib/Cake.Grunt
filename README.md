@@ -27,7 +27,7 @@ Cake.Grunt is a set of aliases for Cake to help with running Grunt scripts as pa
 
 ## Chat Room
 
-Come join in the conversation about Cake.Grunt in our Gitter Chat Room
+Come join in the conversation about Cake.Grunt at [GitHub Discussions][https://github.com/cake-build/cake/discussions/categories/extension-requests]
 
 [![Join the chat at https://gitter.im/cake-contrib/Lobby](https://badges.gitter.im/cake-contrib/Lobby.svg)](https://gitter.im/cake-contrib/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
