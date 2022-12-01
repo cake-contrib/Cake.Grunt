@@ -1,30 +1,30 @@
-// #addin "Cake.Grunt"
-#r "artifacts\build\Cake.Grunt.dll"
+// #addin "Cake.Gulp"
+#r "artifacts\build\Cake.Gulp.dll"
 
 Task("Default")
-    .Does(() => 
+    .Does(() =>
     {
         try {
-            Information("Running Global Grunt");
-            // Executes grunt from a global installation (npm install -g grunt)
-            Grunt.Global.Execute();
+            Information("Running Global Gulp");
+            // Executes gulp from a global installation (npm install -g gulp)
+            Gulp.Global.Execute();
         } catch(Exception ex) {
             Error(ex.ToString());
         }
-        
+
         try {
-            Information("Running Local Grunt");
-            // Executes grunt from a local installation (npm install grunt)
-            Grunt.Local.Execute(settings => settings.WithGruntFile("gruntfile.js"));
+            Information("Running Local Gulp");
+            // Executes gulp from a local installation (npm install gulp)
+            Gulp.Local.Execute(settings => settings.WithGulpFile("gulpfile.js"));
         } catch(Exception ex) {
             Error(ex.ToString());
         }
     });
-        
+
 //////////////////////////////////////////////////////////////////////
 // EXECUTION
 //////////////////////////////////////////////////////////////////////
 
 var target = Argument("target", "Default");
 
-RunTarget(target);    
+RunTarget(target);
