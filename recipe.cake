@@ -17,5 +17,7 @@ BuildParameters.SetParameters(context: Context,
 BuildParameters.PrintParameters(Context);
 
 ToolSettings.SetToolSettings(context: Context);
+ToolSettings.SetToolPreprocessorDirectives(
+    gitVersionGlobalTool: "#tool dotnet:?package=GitVersion.Tool&version=5.11.1");
 
 Build.RunDotNetCore();
