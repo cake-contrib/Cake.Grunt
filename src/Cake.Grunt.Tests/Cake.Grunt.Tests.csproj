@@ -1,7 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-
+    <!--
+        Fool Cake.Incubator into thinking we're building agains netcoreapp3.1.
+        This is done to make Cake.Recipe avoid using OpenCover.                                                                                                                                                                                         Remove this hack if Cake.Recipe bumps the usage of Cake.Incubator to version 7.0.0
+    -->
+    <TargetFrameworks Condition="false">netcoreapp3.1</TargetFrameworks>
     <IsPackable>false</IsPackable>
 
     <LangVersion>default</LangVersion>
