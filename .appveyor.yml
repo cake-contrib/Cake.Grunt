@@ -4,12 +4,6 @@
 image: Visual Studio 2022
 
 #---------------------------------#
-#  Before  Build Script           #
-#---------------------------------#
-before_build:
-  - ps: .\installDotnet7.ps1
-
-#---------------------------------#
 #  Build Script                   #
 #---------------------------------#
 build_script:
