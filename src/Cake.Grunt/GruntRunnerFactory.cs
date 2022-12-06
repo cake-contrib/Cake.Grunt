@@ -5,7 +5,7 @@ using Cake.Core.Tooling;
 namespace Cake.Grunt
 {
     /// <summary>
-    /// Returns a gulp runner based on either a local or global gulp installation via npm
+    /// Returns a grunt runner based on either a local or global grunt installation via npm
     /// </summary>
     public class GruntRunnerFactory
     {
@@ -24,12 +24,12 @@ namespace Cake.Grunt
         }
 
         /// <summary>
-        /// Get a gulp local runner based on a local gulp installation, a local installation is achieved through `npm install gulp`
+        /// Get a grunt local runner based on a local grunt installation, a local installation is achieved through `npm install grunt`
         /// </summary>
         public GruntRunner<GruntLocalRunnerSettings> Local => new GruntLocalRunner(_fileSystem, _environment, _processRunner, _tools);
 
         /// <summary>
-        /// Get a gulp global runner based on a global gulp installation, a global installation is achieved through `npm install gulp -g`
+        /// Get a grunt global runner based on a global grunt installation, a global installation is achieved through `npm install grunt -g`
         /// </summary>
         public GruntRunner<GruntRunnerSettings> Global => new GruntGlobalRunner(_fileSystem, _environment, _processRunner, _tools);
     }

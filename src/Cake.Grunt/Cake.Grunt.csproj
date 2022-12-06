@@ -4,15 +4,39 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <LangVersion>default</LangVersion>
     <PackageTags>cake script build cake-build addin cake-addin</PackageTags>
-    <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
+
+    <TargetFrameworks>net6.0</TargetFrameworks>
+    <AssemblyName>Cake.Grunt</AssemblyName>
+    <RootNamespace>Cake.Grunt</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PlatformTarget>anycpu</PlatformTarget>
+    <DebugType>portable</DebugType>
+    <Company>Cake Contributions - Ken Lea</Company>
+    <Product>Cake.Grunt</Product>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <StartYear>2016</StartYear>
+    <EndYear>$([System.DateTime]::Today.Year)</EndYear>
+    <FullYear Condition="'$(StartYear)'=='$(EndYear)'">$(StartYear)</FullYear>
+    <FullYear Condition="'$(StartYear)'!='$(EndYear)'">$(StartYear)-$(EndYear)</FullYear>
+
+    <!-- Properties related to packaging -->
+    <Authors>Ken Lea</Authors>
+    <Copyright>Copyright © Cake Contributions $(FullYear)</Copyright>
+    <Description>Provides a wrapper around Grunt functionality within a Cake build script</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/cake-contrib/Cake.Grunt</PackageProjectUrl>
+    <PackageTags>cake;cake-addin;build;grunt;cake-build;script;addin</PackageTags>
+    <RepositoryUrl>https://github.com/cake-contrib/Cake.Grunt.git</RepositoryUrl>
+    <PackageReleaseNotes>https://github.com/cake-contrib/Cake.Grunt/releases/tag/2.0.0</PackageReleaseNotes>
+    <RootNamespace>Cake.Grunt</RootNamespace>
+    <Version>0.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Cake.Core" Version="3.0.0" PrivateAssets="All" />
-    <PackageReference Include="CakeContrib.Guidelines" Version="1.4.0">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
   </ItemGroup>
 
 </Project>

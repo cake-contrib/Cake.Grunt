@@ -1,5 +1,5 @@
-var gulp = require("gulp");
+var grunt = require("grunt");
 
-gulp.task("default", function() {
-	console.log("another gulp default task");
-});
+grunt.task("default", function() {
+	console.log("another grunt default task");
+});d

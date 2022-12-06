@@ -18,10 +18,10 @@ Then some examples:
 Task("Default")
     .Does(() => 
     {
-        // Executes gulp from a global installation (npm install -g gulp)
+        // Executes grunt from a global installation (npm install -g grunt)
         Grunt.Global.Execute();
 
-        // Executes gulp from a local installation (npm install gulp)
+        // Executes grunt from a local installation (npm install grunt)
         Grunt.Local.Execute();
     });
 ```
