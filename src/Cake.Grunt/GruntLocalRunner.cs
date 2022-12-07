@@ -8,7 +8,7 @@ using Cake.Core.Tooling;
 namespace Cake.Grunt
 {
     /// <summary>
-    /// gulp local runner
+    /// grunt local runner
     /// </summary>
     public class GruntLocalRunner : GruntRunner<GruntLocalRunnerSettings>
     {

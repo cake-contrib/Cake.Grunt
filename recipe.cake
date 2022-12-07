@@ -1,4 +1,4 @@
-#load nuget:?package=Cake.Recipe&version=1.0.0
+#load nuget:?package=Cake.Recipe&version=3.0.1
 
 Environment.SetVariableNames();
 
@@ -9,15 +9,15 @@ BuildParameters.SetParameters(context: Context,
                             repositoryOwner: "cake-contrib",
                             repositoryName: "Cake.Grunt",
                             appVeyorAccountName: "cakecontrib",
-                            shouldRunGitVersion: true);
+                            shouldRunInspectCode: false,
+                            shouldRunDotNetCorePack: true,
+                            shouldRunCoveralls: false); // Disabled because it's currently failing
+
 
 BuildParameters.PrintParameters(Context);
 
-ToolSettings.SetToolSettings(context: Context,
-                            dupFinderExcludePattern: new string[] {
-                                BuildParameters.RootDirectoryPath + "/src/Cake.Grunt.Tests/*.cs" },
-                            testCoverageFilter: "+[*]* -[xunit.*]* -[Cake.Core]* -[Cake.Testing]* -[*.Tests]* ",
-                            testCoverageExcludeByAttribute: "*.ExcludeFromCodeCoverage*",
-                            testCoverageExcludeByFile: "*/*Designer.cs;*/*.g.cs;*/*.g.i.cs");
+ToolSettings.SetToolSettings(context: Context);
+ToolSettings.SetToolPreprocessorDirectives(
+    gitVersionGlobalTool: "#tool dotnet:?package=GitVersion.Tool&version=5.11.1");
 
 Build.RunDotNetCore();
