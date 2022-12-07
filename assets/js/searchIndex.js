@@ -39,76 +39,6 @@ var searchModule = function() {
     a(
         {
             id:0,
-            title:"GruntLocalRunner",
-            content:"GruntLocalRunner",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Cake.Grunt/api/Cake.Grunt/GruntLocalRunner',
-            title:"GruntLocalRunner",
-            description:""
-        }
-    );
-    a(
-        {
-            id:1,
-            title:"GruntRunnerAliases",
-            content:"GruntRunnerAliases",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Cake.Grunt/api/Cake.Grunt/GruntRunnerAliases',
-            title:"GruntRunnerAliases",
-            description:""
-        }
-    );
-    a(
-        {
-            id:2,
-            title:"GruntGlobalRunner",
-            content:"GruntGlobalRunner",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Cake.Grunt/api/Cake.Grunt/GruntGlobalRunner',
-            title:"GruntGlobalRunner",
-            description:""
-        }
-    );
-    a(
-        {
-            id:3,
-            title:"GruntLocalRunnerSettings",
-            content:"GruntLocalRunnerSettings",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Cake.Grunt/api/Cake.Grunt/GruntLocalRunnerSettings',
-            title:"GruntLocalRunnerSettings",
-            description:""
-        }
-    );
-    a(
-        {
-            id:4,
-            title:"GruntRunnerFactory",
-            content:"GruntRunnerFactory",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/Cake.Grunt/api/Cake.Grunt/GruntRunnerFactory',
-            title:"GruntRunnerFactory",
-            description:""
-        }
-    );
-    a(
-        {
-            id:5,
             title:"GruntRunner",
             content:"GruntRunner",
             description:'',
@@ -122,7 +52,21 @@ var searchModule = function() {
     );
     a(
         {
-            id:6,
+            id:1,
+            title:"GruntLocalRunnerSettings",
+            content:"GruntLocalRunnerSettings",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Cake.Grunt/api/Cake.Grunt/GruntLocalRunnerSettings',
+            title:"GruntLocalRunnerSettings",
+            description:""
+        }
+    );
+    a(
+        {
+            id:2,
             title:"GruntRunnerSettings",
             content:"GruntRunnerSettings",
             description:'',
@@ -131,6 +75,62 @@ var searchModule = function() {
         {
             url:'/Cake.Grunt/api/Cake.Grunt/GruntRunnerSettings',
             title:"GruntRunnerSettings",
+            description:""
+        }
+    );
+    a(
+        {
+            id:3,
+            title:"GruntRunnerFactory",
+            content:"GruntRunnerFactory",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Cake.Grunt/api/Cake.Grunt/GruntRunnerFactory',
+            title:"GruntRunnerFactory",
+            description:""
+        }
+    );
+    a(
+        {
+            id:4,
+            title:"GruntGlobalRunner",
+            content:"GruntGlobalRunner",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Cake.Grunt/api/Cake.Grunt/GruntGlobalRunner',
+            title:"GruntGlobalRunner",
+            description:""
+        }
+    );
+    a(
+        {
+            id:5,
+            title:"GruntRunnerAliases",
+            content:"GruntRunnerAliases",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Cake.Grunt/api/Cake.Grunt/GruntRunnerAliases',
+            title:"GruntRunnerAliases",
+            description:""
+        }
+    );
+    a(
+        {
+            id:6,
+            title:"GruntLocalRunner",
+            content:"GruntLocalRunner",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/Cake.Grunt/api/Cake.Grunt/GruntLocalRunner',
+            title:"GruntLocalRunner",
             description:""
         }
     );
